@@ -4365,40 +4365,45 @@ ul, ol {
 fieldset#captcha {
   border: 1px solid var(--c-border);
   border-radius: 6px;
-  padding: 24px;
+  padding: 20px 24px;
   margin: 16px 0 0 0;
   background: var(--c-primary-pale);
   position: relative;
-  text-align: left;
+  text-align: left !important;
 }
 
 fieldset#captcha legend {
-  display: none; /* 자동등록방지 텍스트 캡션 숨김 */
+  display: none !important; /* 자동등록방지 텍스트 캡션 숨김 */
 }
 
 fieldset#captcha #captcha_img {
+  display: inline-block !important;
+  vertical-align: middle !important;
+  height: 48px !important;
+  width: auto !important;
   border: 1px solid var(--c-border);
   border-radius: 4px;
-  vertical-align: middle;
-  margin-right: 12px;
-  max-height: 60px;
   background: #fff;
+  margin: 0 10px 0 0 !important;
+  box-sizing: border-box;
 }
 
 fieldset#captcha #captcha_key {
-  width: 120px;
-  height: 48px;
+  display: inline-block !important;
+  vertical-align: middle !important;
+  width: 120px !important;
+  height: 48px !important;
   border: 1px solid var(--c-border);
   border-radius: 4px;
   padding: 0 16px;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
   color: var(--c-text);
-  vertical-align: middle;
-  margin-right: 12px;
   text-align: center;
   background: #fff;
   outline: none;
+  box-sizing: border-box;
+  margin: 0 10px 0 0 !important;
   transition: border-color 0.3s;
 }
 
@@ -4407,29 +4412,32 @@ fieldset#captcha #captcha_key:focus {
 }
 
 fieldset#captcha button {
-  height: 48px;
-  padding: 0 16px;
-  border: 1px solid var(--c-border);
-  border-radius: 4px;
-  background: #fff;
-  color: var(--c-text-light);
-  font-size: 13px;
-  font-weight: 400;
+  display: inline-block !important;
+  vertical-align: middle !important;
+  height: 48px !important;
+  padding: 0 16px !important;
+  border: 1px solid var(--c-border) !important;
+  border-radius: 4px !important;
+  background: #fff !important;
+  color: var(--c-text-light) !important;
+  font-size: 13px !important;
+  font-weight: 400 !important;
   cursor: pointer;
-  vertical-align: middle;
-  margin-right: 6px;
+  box-sizing: border-box;
+  margin: 0 6px 0 0 !important;
   transition: all 0.3s;
 }
 
 fieldset#captcha button:hover {
-  border-color: var(--c-primary);
-  color: var(--c-primary);
-  background: var(--c-primary-pale);
+  border-color: var(--c-primary) !important;
+  color: var(--c-primary) !important;
+  background: var(--c-primary-pale) !important;
 }
 
 fieldset#captcha #captcha_info {
-  display: block;
-  margin-top: 12px;
+  display: block !important;
+  clear: both !important;
+  margin-top: 12px !important;
   font-size: 12px;
   color: var(--c-text-light);
   opacity: 0.8;
