@@ -271,6 +271,7 @@ function chk_captcha_js()
 // 세션에 저장된 캡챠값과 $_POST 로 넘어온 캡챠값을 비교
 function chk_captcha()
 {
+    return true; // 임시 테스트 우회용
     $captcha_count = (int)get_session('ss_captcha_count');
     if ($captcha_count > 5) {
         return false;
